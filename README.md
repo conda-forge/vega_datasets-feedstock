@@ -22,12 +22,15 @@ This package has several goals:
 Current build status
 ====================
 
-All platforms: [![Circle CI](https://circleci.com/gh/conda-forge/vega_datasets-feedstock.svg?style=shield)](https://circleci.com/gh/conda-forge/vega_datasets-feedstock)
+All platforms:
+[![noarch](https://img.shields.io/circleci/project/github/conda-forge/vega_datasets-feedstock/master.svg?label=noarch)](https://circleci.com/gh/conda-forge/vega_datasets-feedstock)
 
 Current release info
 ====================
-Version: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/vega_datasets/badges/version.svg)](https://anaconda.org/conda-forge/vega_datasets)
-Downloads: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/vega_datasets/badges/downloads.svg)](https://anaconda.org/conda-forge/vega_datasets)
+
+| Name | Downloads | Version | Platforms |
+| --- | --- | --- | --- |
+| [![Conda Recipe](https://img.shields.io/badge/recipe-vega_datasets-green.svg)](https://anaconda.org/conda-forge/vega_datasets) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/vega_datasets.svg)](https://anaconda.org/conda-forge/vega_datasets) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/vega_datasets.svg)](https://anaconda.org/conda-forge/vega_datasets) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/vega_datasets.svg)](https://anaconda.org/conda-forge/vega_datasets) |
 
 Installing vega_datasets
 ========================
