@@ -1,6 +1,6 @@
 {% set name = "vega_datasets" %}
-{% set version = "0.4.1" %}
-{% set sha256 = "e3a6cd21730b75d4c03f22c653cda5ef5dd64bbd4e5cca46be3ddc8379541623" %}
+{% set version = "0.5.0" %}
+{% set sha256 = "1fa672ba89ded093b30c6d59fce10aca3ac7c927df254e588da7b6d14f695181" %}
 
 package:
   name: {{ name|lower }}
