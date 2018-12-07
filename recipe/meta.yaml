@@ -1,20 +1,17 @@
-{% set name = "vega_datasets" %}
 {% set version = "0.7.0" %}
-{% set sha256 = "20d490b417f84607eb5079400f608f2e9c135b7092bee10f6857f6d23136e459" %}
 
 package:
-  name: {{ name|lower }}
+  name: vega_datasets
   version: {{ version }}
 
 source:
-  fn: {{ name }}-{{ version }}.tar.gz
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: {{ sha256 }}
+  url: https://pypi.io/packages/source/v/vega_datasets/vega_datasets-{{ version }}.tar.gz
+  sha256: 20d490b417f84607eb5079400f608f2e9c135b7092bee10f6857f6d23136e459
 
 build:
   number: 0
   noarch: python
-  script: python -m pip install --no-deps --ignore-installed .
+  script: "{{ PYTHON }} -m pip install . --no-deps -vv"
 
 requirements:
   build:
