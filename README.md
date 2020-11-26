@@ -5,9 +5,13 @@ Home: http://github.com/altair-viz/vega_datasets/
 
 Package license: MIT
 
-Feedstock license: BSD 3-Clause
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/vega_datasets-feedstock/blob/master/LICENSE.txt)
 
 Summary: A Python package for offline access to Vega datasets
+
+Development: http://github.com/altair-viz/vega_datasets/
+
+Documentation: http://github.com/altair-viz/vega_datasets/
 
 A Python package for offline access to Vega datasets available at
 https://github.com/vega/vega-datasets.
