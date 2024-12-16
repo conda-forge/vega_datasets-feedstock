@@ -5,23 +5,26 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/v/vega_datasets/vega_datasets-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/v/vega_datasets/vega_datasets-{{ version }}.tar.gz
   sha256: 9dbe9834208e8ec32ab44970df315de9102861e4cda13d8e143aab7a80d93fc0
 
 build:
-  number: 0
+  number: 1
   noarch: python
-  script: {{ PYTHON }} -m pip install . --no-deps -vv
+  script: {{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
 
 requirements:
   host:
-    - python
+    - python {{ python_min }}
+    - setuptools
     - pip
   run:
-    - python
+    - python >={{ python_min }}
     - pandas
 
 test:
+  requires:
+    - python {{ python_min }}
   imports:
     - vega_datasets
     - vega_datasets.tests
